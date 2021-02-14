@@ -4,9 +4,9 @@ root directory
 ![directory](rootdirectory.jpg)
 
 <code>
-$ cd    
+$ cd         
 user@:~$  
   
-$ cd Music  
-user@:~/Music 
+$ cd Music       
+user@:~/Music$ 
 <code>
