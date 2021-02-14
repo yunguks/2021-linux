@@ -40,4 +40,7 @@ mkdir [옵션]
 $ mkdir test
 ```
    
-man [옵션]
+man [옵션]   
+|옵션|내용|   
+|:---:||:---:|   
+|man||man page에 대한 옵션 내용|
