@@ -4,13 +4,11 @@ root directory
 ![directory](rootdirectory.jpg)
 
 <code>
-$ cd
-
-user@:~$ 
-
+$ cd   
+  user@:~ 
+  
 $ cd Music
-
-user@:~/Music$    
+   user@:~/Music    
 </code>
 
 cd 디렉토리 변경 command    
