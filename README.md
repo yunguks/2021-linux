@@ -5,10 +5,10 @@ root directory
 
 <code>
 $ cd   
-  user@:~ 
+user@:~$
   
 $ cd Music
-   user@:~/Music    
+user@:~/Music    
 </code>
 
 cd 디렉토리 변경 command    
