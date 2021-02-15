@@ -75,3 +75,31 @@ Hello!
 $ cat -n test.txt
 1   Hello
 ```
+
+## redirect
+출력을 파일로 변경 '>' 사용
+```
+# ls 명령어 test.txt 파일로 저장
+$ ls > test.txt
+$ cat test.txt
+Desktop
+Music
+Downloads ...
+
+# ls 명령어 test.txt 에 추가하여 저장
+$ ls >> test.txt
+$ cat test.txt
+Hello
+Desktop
+Music ...
+```
+
+## pipe
+'|' 기호를 기준으로 왼쪽 명령어를 오른쪽 으로 전달
+```
+$ cat test.txt | sort
+Desktop
+Documents
+Downloads ...
+
+$ 
