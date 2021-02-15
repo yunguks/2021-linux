@@ -26,7 +26,7 @@ $ ls -a
 .. sample.ogg
 ```
    
-rm [옵션]   
+rm [옵션]   #파일 제거
 ```
 $ rm file
 
@@ -37,9 +37,9 @@ $ rm -f file
 강제 삭제
 ```
    
-mkdir [옵션]
+mkdir [옵션] #디렉토리 만들기
 ```
-$ mkdir test
+$ mkdir -m test
 ```
    
 man [옵션]   
@@ -102,4 +102,8 @@ Desktop
 Documents
 Downloads ...
 
-$ 
+$ cat test.txt | grep test
+testscript.sh
+test.txt
+```
+
