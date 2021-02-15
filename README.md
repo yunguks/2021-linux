@@ -71,6 +71,7 @@ cat [옵션] [파일이름]
 $ cat test.txt
 Hello!
 
+# 라인에 번호 붙여 출력
 $ cat -n test.txt
 1   Hello
 ```
