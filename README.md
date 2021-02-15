@@ -33,6 +33,8 @@ $ rm file
 $ rm -i file
 rm: remove file 'file'? (y,n 입력)
 
+$ rm -f file
+강제 삭제
 ```
    
 mkdir [옵션]
@@ -52,15 +54,23 @@ man [옵션]
 cp [옵션] [원본파일명] [대상파일명]      
 ```
 #동일한 파일명이 있을 경우 사용자에게 덮어 쓸지 여부 물음
-cp -i file copyfile
+$ cp -i file copyfile
 
 #동일한 파일명 있을 경우 강제로 지우고 복사
-cp -f file copyfile 
+$ cp -f file copyfile 
 
 #복사 대상이 이미 존재하고 파일이 더 최신이면 복사 x
-cp -u file copyfile
+$ cp -u file copyfile
 
 #[원본파일명]이 결로일 경우, 그 경로에 있는 하위 디렉토리를 포함해 모두 복사
-cp -r file copypath
-```
+$ cp -r file copypath
+```   
 
+cat [옵션] [파일이름]   
+```
+$ cat test.txt
+Hello!
+
+$ cat -n test.txt
+1   Hello
+```
