@@ -39,8 +39,13 @@ $ rm -f file
    
 mkdir [옵션] #디렉토리 만들기
 ```
-$ mkdir -m test
+$ mkdir -m 755 test
+drwx r-x r-x  type 파일 만듬
 ```
+| d = directory - = 일반file b = block device c = 문자장치(keyboard) l = symbolic link |             파일 접근 권한  'r w x' / 'r w -' / '- w -' user / group / other             | r = read(읽기)  w = write(쓰기)  x = execute(실행) |
+|--------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------:|:--------------------------------------------------:|
+| -rwxrw-r--                                                                           | 일반파일 /user는 읽기,쓰기,실행          /group은 읽기,쓰기           /other은 읽기 가능 |                                                    |
+| drw-r---w-                                                                           | 디렉토리 /user는 읽기,쓰기          /group은 읽기          /other은 쓰기                 |                                                    |
    
 man [옵션]   
 | 옵션 | 내용 | page | 내용 | page | 내용 |
