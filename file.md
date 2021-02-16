@@ -32,7 +32,7 @@ Welcome to GNU parted! Type 'help' to view a list of commands
 (parted) 입력
 ```
 print   
-![parted][print.jpg]
+![parted](print.jpg)
     
 mkpart    
-![mkparted][mkpart.jpg]
+![mkparted](mkpart.jpg)
