@@ -25,3 +25,11 @@ t 파티션 종류 변경
     
 ## parted   
 <u>fdisk랑 다르게 변경사항 즉시 기록 주의!</u>
+
+```
+$ sudo parted /dev/sdb
+Welcome to GNU parted! Type 'help' to view a list of commands
+(parted) 입력
+
+print
+```
