@@ -64,3 +64,5 @@ $ sudo umount /dev/sdb1
 # mount 확인 [디바이스명]
 $ sudo mount | grep /deb/sdb1
 ```
+### 자동마운트
+
