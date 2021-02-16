@@ -160,4 +160,14 @@ $ ln file hardlink
 # -s 옵션로 심볼링크 생성
 $ ln -s file symlink
 ```
-
+   
+## named pipe
+다른쉘에서 명령어 사용 가능 
+mkfifo [name]   
+```
+$ mkfifo pipe1
+$ echo hello > pipe1
+                                $ cat pipe1
+                                hello
+$
+```
