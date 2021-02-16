@@ -72,7 +72,7 @@ $ sudo nano /etc/fstab
 ```
 ![moutnano](mountnano.jpg)   
 빨간줄에 자동 마운트할 정보 입력(빨간 네모안 양식에 따라)    
-<option>                                                              
+[option]                                                              
 default - rw,suid,devemd,auto 등의 옵션을 모두 선택한 것과 같음   
 auto - 부팅시 자동으로 마운트 된다                                    
 exec - 실행팡리이 실행되는 것을 허용하는 파일 시스템   
