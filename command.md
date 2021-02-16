@@ -97,7 +97,8 @@ $ grep -i str file
 # 하위 디렉토리를 포함한 모든 파일에서 검색
 $ grep -r str *
 
-#문자열 라인 시작 패턴 검색
+# 문자열 라인 시작 패턴 검색
+$ grep ^str file
 ```
    
 ## redirect
