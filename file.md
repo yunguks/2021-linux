@@ -64,5 +64,21 @@ $ sudo umount /dev/sdb1
 # mount 확인 [디바이스명]
 $ sudo mount | grep /deb/sdb1
 ```
-### 자동마운트
+### 자동마운트   
 
+1. nano 에 마운트 할 정보입력
+```
+$ sudo nano /etc/fstab
+```
+![moutnano](mountnano.jpg)   
+빨간줄에 자동 마운트할 정보 입력(빨간 네모안 양식에 따라)    
+<option>                                                          <dump>          <pass>    
+default - rw,suid,devemd,auto 등의 옵션을 모두 선택한 것과 같음    0 - 백업 x       0 - 부팅시 검사 x   
+auto - 부팅시 자동으로 마운트 된다                                 1 - 백업 o       1 - 부팅시 검사 o    
+exec - 실행팡리이 실행되는 것을 허용하는 파일 시스템   
+suid - SetUID와 SetGID의 사용을 허용하는 파일 시스템   
+ro - 읽기 전용 파일 시스템   
+user - 일반 사용자들도 마운트 할 수 있는 파일 시스템    
+nouser - root만 마운트 할수 있는 파일시스템   
+    
+2. 정보입력후 $ mount -a 로 
