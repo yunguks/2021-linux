@@ -85,7 +85,20 @@ Hello!
 $ cat -n test.txt
 1   Hello
 ```
-   
+
+grep [옵션] [검색] [파일]
+```
+# 현재디렉토리 모든 파일에서 검색
+$ grep str *
+
+# 대소문자 구분 하지 않고 검색
+$ grep -i str file
+
+# 하위 디렉토리를 포함한 모든 파일에서 검색
+$ grep -r str *
+
+#문자열 라인 시작 패턴 검색
+
    
 ## redirect
 출력을 파일로 변경 '>' 사용
