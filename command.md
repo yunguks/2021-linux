@@ -98,7 +98,7 @@ $ grep -i str file
 $ grep -r str *
 
 #문자열 라인 시작 패턴 검색
-
+```
    
 ## redirect
 출력을 파일로 변경 '>' 사용
