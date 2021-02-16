@@ -35,4 +35,15 @@ print
 ![parted](print.jpg)
     
 mkpart    
-![mkparted](mkpart.jpg)
+![mkparted](mkpart.jpg)   
+```
+# 부팅 파티션 설정
+(parted) set 1 boot on
+
+# 파티션 사이즈 변경 / 사이즈가 작아진다면 데이터 잃음 경고
+(parted) resizepart 2 [파티션 넘버]
+End? 4000
+
+# 파티션 제거
+(parted) rm 2 [파티션 넘버]
+```
