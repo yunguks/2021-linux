@@ -112,6 +112,9 @@ $ touch -m file [시간 수정할 파일]
 
 # 파일이 없을 경우 생성 x
 $ touch -c 
+
+# 파일 수정시간 지정한 시간으로 변경
+$ touch -t YYMMDDhhss file
 ```
    
 ## redirect
