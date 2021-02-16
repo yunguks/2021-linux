@@ -133,3 +133,15 @@ testscript.sh
 test.txt
 ```
 
+## link 생성
+'ln' 명령로 생성
+hard link inode가 같으며 원본과 복사본의 차이가 없다. 원본이 삭제되어도 파일접근 가능
+symbolic link inode가 다르며 원본이 삭제되면 파일 접근 x
+```
+# ln 파일복사 명령어로 하드링크 생성
+$ ln file hardlink
+
+# -s 옵션로 심볼링크 생성
+$ ln -s file symlink
+```
+
