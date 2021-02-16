@@ -30,6 +30,9 @@ t 파티션 종류 변경
 $ sudo parted /dev/sdb
 Welcome to GNU parted! Type 'help' to view a list of commands
 (parted) 입력
-
-print
 ```
+print   
+![parted][print.png]
+    
+mkpart    
+![mkparted][mkpart.png]
