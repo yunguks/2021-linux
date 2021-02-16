@@ -72,6 +72,7 @@ $ sudo nano /etc/fstab
 ```
 ![moutnano](mountnano.jpg)   
 빨간줄에 자동 마운트할 정보 입력(빨간 네모안 양식에 따라)    
+    
 [option]                                                              
 default - rw,suid,devemd,auto 등의 옵션을 모두 선택한 것과 같음   
 auto - 부팅시 자동으로 마운트 된다                                    
@@ -81,4 +82,5 @@ ro - 읽기 전용 파일 시스템
 user - 일반 사용자들도 마운트 할 수 있는 파일 시스템    
 nouser - root만 마운트 할수 있는 파일시스템   
     
-2. 정보입력후 $ mount -a 로 
+      
+2. 정보입력후 $ mount -a 로 파일 적용
