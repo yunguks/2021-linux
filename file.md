@@ -15,3 +15,13 @@ Be care ful before using the write command.
 Command (m for help) :
 
 m 메뉴보기
+p 파티션 설정 보기
+a 부팅 파티션 설정
+d 파티션 삭제
+w 파티션 설정 저장
+n 파티션 추가
+t 파티션 종류 변경
+```
+    
+## parted   
+<span style="color:red">fdisk랑 다르게 변경사항 즉시 기록 주의!</span>   
