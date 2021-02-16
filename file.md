@@ -24,4 +24,5 @@ t 파티션 종류 변경
 ```
     
 ## parted   
+<span style="color:red">fdisk랑 다르게 변경사항 즉시 기록 주의</span>
 <span style="color:red">fdisk랑 다르게 변경사항 즉시 기록 주의!</span>   
