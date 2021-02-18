@@ -31,5 +31,9 @@ $ top -u user / user 의 process 표시
 $ top -n 2 10 / 2초간격 10번 표시
 $ top -b    / bach 모드
 
-
+# process 선택하여 보기
+$ pgrep name / name을 포함한 process PID
+$ pgrep -l name / name을 포함한 process PID,name
+$ pgrep -lu user / user 의 process
+$ ps -p $(pgrep name) / 
 ```
