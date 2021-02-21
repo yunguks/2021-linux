@@ -56,7 +56,7 @@ $ sudo renice [N] PID
 $ sudo renice [N] -u user / user 의 NI값 변경
 ```
    
-## bg, fg &  참고(https://jhnyang.tistory.com/395)
+## bg, fg &  
 & - 명령어 뒤에 &붙이면 백그라운드로 실행
 ```
 $ sudo apt update &
@@ -72,11 +72,32 @@ $ jobs
 ```
    
 bg ,fg 프로세스 변경   
-*ctrl + z 로 프로세스 멈출수 있음
+*ctrl + z 로 백그라운드로 보내면서 프로세스 멈출수 있음 
 ```
 # 실행중인 프로세스 백그라운드로 변경
-$ bg 
+$ bg [작업번호]
 
 # 실행중인 프로세스 포그라운드로 변경
-$ fg
+$ fg [작업번호]
 ```
+참고(https://jhnyang.tistory.com/395)   
+   
+## process 종료    
+kill   
+```
+# PID 프로세스 종료
+$ kill PID 
+
+# 1번 프로세스 종료
+$ kill %1
+
+# 여러가지 옵션
+$ kill -[option] PID
+```
+    
+killall - 여러 프로세스 한번에 종료
+```
+$ killall [option] process
+```
+   
+##
