@@ -94,6 +94,7 @@ $ kill %1
 # 여러가지 옵션
 $ kill -[option] PID
 ```
+![kill](pic/kill.jpg)
     
 killall - 여러 프로세스 한번에 종료
 ```
