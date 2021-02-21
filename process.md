@@ -55,3 +55,27 @@ $ nice process / default 값 10인 process 실행
 $ sudo renice [N] PID
 $ sudo renice [N] -u user / user 의 NI값 변경
 ```
+   
+## bg, fg &   
+& - 명령어 뒤에 &붙이면 백그라운드로 실행
+```
+$ sudo apt update &
+[1] 6145
+```
+   
+jobs - 백그라운드 프로세스나 중지된 프로세스의 목록 출력
+```
+$ jobs
+[1]+ Stopped  sudo apt update
+[2]  done     cat /var/log/pkglog.bin > logtest.txt
+```
+   
+bg ,fg 프로세스 변경   
+*ctrl + z 로 프로세스 멈출수 있음
+```
+# 실행중인 프로세스 백그라운드로 변경
+$ bg 
+
+# 실행중인 프로세스 포그라운드로 변경
+$ fg
+```
