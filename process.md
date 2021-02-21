@@ -12,7 +12,9 @@ $ ps -u user
 ~~~
 
 # 모든 process 보기
-$ ps -e
+$ ps -e 
+$ ps -el
+$ ps -ef
 ~~~
 
 # 정보 표시
@@ -35,5 +37,6 @@ $ top -b    / bach 모드
 $ pgrep name / name을 포함한 process PID
 $ pgrep -l name / name을 포함한 process PID,name
 $ pgrep -lu user / user 의 process
-$ ps -p $(pgrep name) / 
+$ ps -fp $(pgrep name) / name을 포함한 process 찾고 출력
+
 ```
