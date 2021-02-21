@@ -1,7 +1,7 @@
 # 2021-linux
 
 root directory   
-![directory](rootdirectory.jpg)
+![directory](pic/rootdirectory.jpg)
 
 ## command   
 cd 디렉토리변경    
