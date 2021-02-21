@@ -100,4 +100,40 @@ killall - 여러 프로세스 한번에 종료
 $ killall [option] process
 ```
    
-##
+## shell을 꺼도 실행되는 process   
+nohup
+```
+$ nohup [명령어] &
+```
+   
+## process 예약   
+at - 1회성 예약
+```
+$ at now +5 min 
+at> echo hello > test.txt
+at> <Ctrl+D> <EOT> /종료
+
+# 예약 목록 list
+$ at -l
+
+# 예약 제거
+$ at -d [예약번호]
+
+```   
+    
+crontab file  - 반복 예약
+```
+# 예약 추가
+$ crontab -e
+________________________________________________
+|# m  h   dom mon dow    command               |
+| 00 12    *   *   *     echo hello > test.txt |
+|______________________________________________|
+
+# 예약 리스트 확인
+$ crontab -l
+
+# 예약 제거
+$ crontab -r
+```
+
