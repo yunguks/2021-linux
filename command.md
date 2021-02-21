@@ -101,6 +101,21 @@ $ grep -r str *
 $ grep ^str file
 ```
    
+find [경로] [파일]   
+파일 및 디렉토리 검색
+```
+$ find [path]  / 경로에 있는 파일 및 디렉토리 표시
+$ find . -name [file]  / 현재 디렉토리 하위의 모든 파일 검색
+$ find / -name [file]  / root 디렉토리 하위의 모든 파일 검색
+$ find . -nmae "STR*"  / STR문자열로 시작하는 파일 검색
+$ find . -name "*STR*" / STR문자열이 포함하는 파일 검색
+$ find . -empty        / 크기가 0일 파일 검색
+$ find . -name "*.EXT" -delete  / EXT확장자 검색후 삭제
+$ find . -name [file] -exec ls -l {} \;  / 검색후 파일에 대한 상세 정보 출력
+$ find . -nmae [file] -exec cp {} [path] \; / 검색된 파일 복사 
+
+```
+   
 touch [옵션] [파일명]   
 아무것도 지정하지 않으면 빈파일 생성
 ```
@@ -116,6 +131,7 @@ $ touch -c
 # 파일 수정시간 지정한 시간으로 변경
 $ touch -t YYMMDDhhss file
 ```
+   
    
 ## redirect
 출력을 파일로 변경 '>' 사용
