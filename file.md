@@ -32,10 +32,10 @@ Welcome to GNU parted! Type 'help' to view a list of commands
 (parted) 입력
 ```
 print   
-![parted](print.jpg)
+![parted](pic/print.jpg)
     
 mkpart    
-![mkparted](mkpart.jpg)   
+![mkparted](pic/mkpart.jpg)   
 ```
 # 부팅 파티션 설정
 (parted) set 1 boot on
