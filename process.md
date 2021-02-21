@@ -56,14 +56,15 @@ $ sudo renice [N] PID
 $ sudo renice [N] -u user / user 의 NI값 변경
 ```
    
-## bg, fg &   
+## bg, fg &  참고(https://jhnyang.tistory.com/395)
 & - 명령어 뒤에 &붙이면 백그라운드로 실행
 ```
 $ sudo apt update &
 [1] 6145
 ```
    
-jobs - 백그라운드 프로세스나 중지된 프로세스의 목록 출력
+jobs - 백그라운드 프로세스나 중지된 프로세스의 목록 출력    
++는 현재 진행중인 프로세스 -는 바로다음 진행할 프로세스
 ```
 $ jobs
 [1]+ Stopped  sudo apt update
