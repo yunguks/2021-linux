@@ -40,3 +40,18 @@ $ pgrep -lu user / user 의 process
 $ ps -fp $(pgrep name) / name을 포함한 process 찾고 출력
 
 ```
+   
+## Processor priority   
+nice / 프로세스의 우선순위를 정하는 명령어   
+-20 ~ 19 까지 있으며 작을수록 우선순위   
+
+*PNI도 우선순위이나 조절할 수 없음   
+```
+# 우선순위에 +N 한 프로세스 실행
+$ nice -[N] process
+$ nice process / default 값 10인 process 실행
+
+# 이미실행된 NI값에 N을 더한 값 변경
+$ sudo renice [N] PID
+$ sudo renice [N] -u user / user 의 NI값 변경
+```
