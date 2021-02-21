@@ -70,7 +70,7 @@ $ sudo mount | grep /deb/sdb1
 ```
 $ sudo nano /etc/fstab
 ```
-![moutnano](mountnano.jpg)   
+![moutnano](pic/mountnano.jpg)   
 빨간줄에 자동 마운트할 정보 입력(빨간 네모안 양식에 따라)    
     
 [option]                                                              
