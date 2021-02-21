@@ -113,6 +113,7 @@ $ find . -empty        / 크기가 0일 파일 검색
 $ find . -name "*.EXT" -delete  / EXT확장자 검색후 삭제
 $ find . -name [file] -exec ls -l {} \;  / 검색후 파일에 대한 상세 정보 출력
 $ find . -nmae [file] -exec cp {} [path] \; / 검색된 파일 복사 
+$ find . -maxdepth 1   / 깊이가 1인 파일만 
 
 ```
    
