@@ -68,5 +68,28 @@ $ dmesg | less
 dmesg 명령어는 시스템 부팅 메세지를 확인하는 명령어이다.    
 또한 커널에서 출력되는 메세지를 일정 수준 기록하는 버퍼 역할을 수행하며,   
 커널 부팅 중에 에러가 났다면 어느 단계에서 에러가 났는지 범위를 좁히고 찾아내는데 도움이 된다.
+
+# 커널 파라미터 나열
+$ sudo sysctl -a 
+
+# 커널 파라미터 검색
+$ sudo sysctl [kernel parameter]
 ```
+   
+# module   
+```
+# 모듈의 정보
+$ lsmod 
+Moule           Size             Used by 
+...
+
+# 한 모듈의 자세한 정보
+$ modinfo [module name]
+
+# 모듈 추가 로드
+$ sudo modprobe [moudle name]
+
+# 모듈 제거
+$ sudo modprobe -r [moudle name]
+
 
