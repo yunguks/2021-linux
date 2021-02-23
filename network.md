@@ -63,3 +63,28 @@ $ ip a
 $ ip help
 ```
 *ip command참조(https://www.howtogeek.com/657911/how-to-use-the-ip-command-on-linux/)
+
+## ping
+```
+# 도움말
+$ ping -h
+
+# 소리 나는
+$ ping -a 10.0.2.2
+
+# 패킷 간의 응답속도에 맞춰 패킷보내기
+$ ping -A 10.0.2.2
+
+# 브로드캐스트 주소에 ping 가능게한다
+$ ping -b www.~~
+
+# 패킷횟수 정하기
+$ ping -c [number] 10.0.2.2
+
+# 타임스탬프 출력
+$ ping -D 10.0.2.2
+
+# 패킷 간 간격 조절
+$ ping -i [number] 10.0.2.2
+```
+*ping 참조(https://blog.naver.com/o0iwishu0o/221260788272)
