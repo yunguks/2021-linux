@@ -36,4 +36,6 @@ $ top
 #CPU 정보 확인
 $ cat /proc/cpuinfo
 ```
-
+   
+# Storage    
+##
