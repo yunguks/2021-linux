@@ -88,3 +88,9 @@ $ ping -D 10.0.2.2
 $ ping -i [number] 10.0.2.2
 ```
 *ping 참조(https://blog.naver.com/o0iwishu0o/221260788272)
+
+## web browsing   
+elinks <url>   
+텍스트 모드 웹 브라우저에서 GUI를 사용할 수 없을 때   
+웹서버가 동작중인지 혹은 정보를 얻어오는지 체크   
+   
