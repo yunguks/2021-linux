@@ -151,6 +151,22 @@ $ touch -c
 $ touch -t YYMMDDhhss file
 ```
    
+apt   
+dpkg의 의존성 문제 해결 및 의존관계에 맞춰서 관련된 패키기 설치   
+```
+# 설치
+$ apt-get install [pakage]
+
+# 패키지 업데이트
+$ apt-get update
+
+# 패키지 삭제
+$ apt-get remove [pakage]
+
+# 패키지 정보확인
+$ apt-cache show [pakage]
+```
+   
    
 ## redirect
 출력을 파일로 변경 '>' 사용
