@@ -90,19 +90,22 @@ $ ping -i [number] 10.0.2.2
 *ping 참조(https://blog.naver.com/o0iwishu0o/221260788272)
 
 ## web browsing   
-elinks <url>   
+elinks [url]   
 텍스트 모드 웹 브라우저에서 GUI를 사용할 수 없을 때   
 웹서버가 동작중인지 혹은 정보를 얻어오는지 체크    
-<pic.elink.jpg>  
-<pic.elink2.jpg>
+!<pic.elink.jpg>  
+!<pic.elink2.jpg>
    
 ## transferring file   
-wget <url>   
+wget [url]   
 웹 서버로 부터 원하는 웹사이트 정보를 가져와 저장   
 ```
 # HTML페이지에서 표현 가능한 모든 이미지와 모든 것을 가져옴
 $ wget -p <www.wiley.com>
-   
+
+# .html 파일을 브라우저로 열 때 깨지는 현상을 막기 위해서 로컬 파일 이름으로 바꿈
+$ wget -pk <www.wiley.com>
+
 # 원본 파일과 로컬 파일 이름으로 바꾼 파일 둘다 만들어줌
 $ wget -pkK <www.wiley.com>
 
@@ -111,4 +114,51 @@ $ wget -h
 
 # 백그라운드 작동
 $ wget -b <www.wiley.com>
+```
+   
+curl   
+wget과 유사하나 SCP,SFTP,LDAP,DICT 등 다양한 프로토콜 지원   
+```
+# txt 파일로 받기
+$ curl -o <www.wiley.com>
+
+# html 파일로 받기
+$ culr -O <www.wiley.com>
+```
+   
+lftp   
+FTP 서버에서 네트워크를 통해 문서를 가져올때 연결
+```
+$ lftp ftp.kaist.ac.kr
+lftp ftp.kaist.ac.kr:~> pwd
+ftp://ftp.kaist.ac.kr
+lftp ftp.kaist.ac.kr:~> ls
+drwxr-xr-x   17  1000   1000     4096 Feb 16 10:30 Archlinux
+...
+
+# 파일 다운 받기 / get (한 파일)
+$ lftp ftp.kaist.ac.kr
+lftp ftp.kaist.ac.kr:~> cd apache/accumulo/1.10.1
+cd 성공, cwd=/apache/accumulo/1.10.1
+lftp ftp.kaist.ac.kr:/apache/accumulo/1.10.1> ls
+-rw-rw-r-- 1   1000  1000  23880434 Dec 22 19:16 accumulo-1.10.1-bin.tar.gz
+-rw-rw-r-- 1   1000  1000  23880434 Dec 22 19:16 accumulo-1.10.1-src.tar.gz
+lftp ftp.kaist.ac.kr:/apache/accumulo/1.10.1> get accumulo-1.10.1-src.tar.gz
+
+# 파일 다운 받기 / mirror (한 디렉토리)
+$ mkdir test
+$ lftp ftp.kaist.ac.kr
+lftp ftp.kaist.ac.kr:~> cd apache/accumulo
+cd 성공, cwd=/apache/accumulo
+lftp ftp.kaist.ac.kr:/apache/accumulo> mirror 1.10.1 /test
+```   
+   
+scp   
+나의 로컬에 있는 데이터를 전송할 때   
+```
+# 단일 파일
+$ scp <파일명><원격지 id>@<원격지 ip>:<받는위치>
+
+# 디렉토리
+$ scp <디렉토리명><원격지 id>@<원격지 ip>:<보낼 경로>
 ```
