@@ -92,5 +92,23 @@ $ ping -i [number] 10.0.2.2
 ## web browsing   
 elinks <url>   
 텍스트 모드 웹 브라우저에서 GUI를 사용할 수 없을 때   
-웹서버가 동작중인지 혹은 정보를 얻어오는지 체크   
+웹서버가 동작중인지 혹은 정보를 얻어오는지 체크    
+<pic.elink.jpg>  
+<pic.elink2.jpg>
    
+## transferring file   
+wget <url>   
+웹 서버로 부터 원하는 웹사이트 정보를 가져와 저장   
+```
+# HTML페이지에서 표현 가능한 모든 이미지와 모든 것을 가져옴
+$ wget -p <www.wiley.com>
+   
+# 원본 파일과 로컬 파일 이름으로 바꾼 파일 둘다 만들어줌
+$ wget -pkK <www.wiley.com>
+
+# 도움말 표시
+$ wget -h
+
+# 백그라운드 작동
+$ wget -b <www.wiley.com>
+```
