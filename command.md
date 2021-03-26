@@ -76,6 +76,12 @@ $ mv -i test1 ./study
 
 # 파일 옮기는 과정 자세하게 출력
 $ mv -v test1 ./study
+
+# 디렉토리1에서 디렉토리2 이동
+$ mv dir1/ dir2/
+
+# 여러개의 파일 이동
+$ mv file1 fil2 dir1/
 ```   
    
    
